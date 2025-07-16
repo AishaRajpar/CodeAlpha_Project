@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styleGallery.css">
+
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="11.jpeg"  id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    <div class="nav-buttons">
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+ 
+    </div>
+    </div>
+  <div class="filter-buttons">
+  <button data-filter="all">All</button>
+  <button data-filter="nature">Nature</button>
+  <button data-filter="city">City</button>
+  <button data-filter="animals">Animals</button>
+</div>
+    <div class="img-gallery">
+        <img src="11.jpeg" class="gallery-image" data-category="nature" onclick="openFullImg(this.src)" >
+        <img src="4.png" class="gallery-image" data-category="city" onclick="openFullImg(this.src)">
+        <img src="10.webp" class="gallery-image" data-category="animals" onclick="openFullImg(this.src)">
+        <img src="image1.webp" class="gallery-image" data-category="nature" onclick="openFullImg(this.src)">
+        <img src="image2.jpg" class="gallery-image" data-category="city" onclick="openFullImg(this.src)">
+        <img src="images (1).jpg" class="gallery-image" data-category="animals" onclick="openFullImg(this.src)">
+        <img src="1.webp" class="gallery-image" data-category="nature" onclick="openFullImg(this.src)">
+        <img src="2.jpeg" class="gallery-image" data-category="city" onclick="openFullImg(this.src)">
+        <img src="3.webp" class="gallery-image" data-category="animals" onclick="openFullImg(this.src)">
+        <img src="5.jpeg" class="gallery-image" data-category="nature" onclick="openFullImg(this.src)">
+        <img src="6.jpg" class="gallery-image" data-category="city" onclick="openFullImg(this.src)">
+        <img src="7.jpg" class="gallery-image" data-category="animals" onclick="openFullImg(this.src)">
+        <img src="8.jpg" class="gallery-image" data-category="nature" onclick="openFullImg(this.src)">
+        <img src="9.jpg" class="gallery-image" data-category="city" onclick="openFullImg(this.src)">
+        <img src="jerry.jpg" class="gallery-image" data-category="city" onclick="openFullImg(this.src)">
+    </div>
+    <script src="scriptGallery.js"></script>
+
+
+    
+</body>
+</html>
